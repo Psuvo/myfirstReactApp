@@ -1,0 +1,170 @@
+.selected {
+  border-bottom: 2px solid blue !important;
+  color: blue !important;
+  background: #fff !important;
+}
+
+.right-panel {
+  float: right;
+  width: 78%;
+  height: 100vh;
+  header {
+    float: left;
+    width: 100%;
+    height: 12vh;
+    position: relative;
+    .left-text {
+      float: left;
+      left: 30px;
+      width: auto;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      .text {
+        float: left;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        h3 {
+          font-size: 22px;
+          margin: 0;
+          color: #4d4d4d;
+        }
+        label {
+          font-size: 13px;
+          margin-left: 10px;
+          color: #cdcdcd;
+        }
+      }
+    }
+    .right-text {
+      float: right;
+      width: auto;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      button {
+        float: right;
+        width: auto;
+        background: #3b91ff;
+        border: none;
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+        padding: 7px 20px;
+        .btn-img {
+          width: 8px;
+          height: 8px;
+          display: flex;
+          align-items: center;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          padding: 3px;
+        }
+        .btn-text {
+          color: #fff;
+          margin-left: 5px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .filter-section {
+    float: left;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #f8f8f8;
+    .filter-options {
+      float: left;
+      width: 100%;
+      margin: 15px ​30px 0 0;
+      ul {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        li {
+          float: left;
+          width: fit-content;
+          list-style: none;
+          padding: 10px 0;
+          margin-right: 35px;
+          color: #7f7f7f;
+          font-weight: 600;
+          font-size: 15px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .tablelist {
+    float: left;
+    width: 100%;
+    margin: 30px 0 0 0;
+    table {
+      float: left;
+      width: 100%;
+      background: #fdfdfd;
+      border-spacing: 0;
+      tr {
+        background: #fafafa;
+        th {
+          text-align: center;
+          padding: 20px 0;
+          color: #7d837c;
+          border-bottom: 1px solid #ececec;
+        }
+        td {
+          text-align: center;
+          padding: 20px 0;
+          font-size: 13px;
+          border-bottom: 1px solid #ececec;
+          div {
+            float: left;
+            width: 100%;
+            margin: 0 0 0 10px;
+            display: flex;
+            align-items: center;
+            p {
+              margin: 0;
+              margin-left: 10px;
+            }
+          }
+          label {
+            color: green;
+            border: 1px solid green;
+            padding: 3px 5px;
+          }
+          .lastfield {
+            float: left;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .eye {
+              float: left;
+              width: fit-content;
+              font-size: 20px;
+              padding: 2px 15px;
+              background: #fff;
+              box-shadow: 0 1px 3px 2px #ececec;
+              cursor: pointer;
+            }
+            .bin {
+              float: left;
+              width: fit-content;
+              font-size: 20px;
+              padding: 0px 15px;
+              border: 1px solid #f00;
+              color: #f00;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      tr:first-child {
+        background: none;
+      }
+    }
+  }
+}
